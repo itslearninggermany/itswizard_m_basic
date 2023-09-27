@@ -1,6 +1,7 @@
 package itswizard_m_basic
 
 import (
+	"fmt"
 	uuid "github.com/satori/go.uuid"
 	"strings"
 )
@@ -14,4 +15,8 @@ func MakeARandomString() string {
 		output = output + tmp[i]
 	}
 	return output
+}
+
+func Test() {
+	fmt.Println("Hallo")
 }

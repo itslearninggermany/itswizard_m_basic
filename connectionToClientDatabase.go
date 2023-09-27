@@ -42,3 +42,6 @@ func NewDatabases(filename string, bucketname string) (out databases, err error)
 func (p databases) GetDatabase(input string) *gorm.DB {
 	return p[input]
 }
+
+// Seite von Messagehtml
+const Message = "message.html"

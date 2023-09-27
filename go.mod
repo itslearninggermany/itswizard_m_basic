@@ -3,7 +3,8 @@ module github.com/itslearninggermany/itswizard_m_basic
 go 1.19
 
 require (
-	github.com/itslearninggermany/itswizard_m_awsbrooker v0.0.0-20230927075112-b2c538779889
+	github.com/itslearninggermany/itswizard_m_awsbrooker v1.0.0
+	github.com/itslearninggermany/itswizard_m_objects v1.0.0
 	github.com/jinzhu/gorm v1.9.16
 	github.com/satori/go.uuid v1.2.0
 )

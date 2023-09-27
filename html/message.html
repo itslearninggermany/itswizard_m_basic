@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <title>{{.Sitename}}</title>
+</head>
+<body>
+
+<section class="hero is-light is-medium">
+
+
+    {{.Navigation}}
+
+
+    <div class="modal is-active" id="myModal" >
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">{{.Special.Headline}}</p>
+                <a href="{{.Special.TargetClose}}"><button class="delete" aria-label="close" value="close">Schließen</button></a>
+                <!--<button class="delete" aria-label="close" value="close" onclick="window.location.href='https://www.itswizard.de{{.Special.TargetClose}}'"></button> -->
+            </header>
+            <section class="modal-card-body">
+                <br>
+                <p>{{.Special.Message}}</p>
+                <br>
+            </section>
+            <footer class="modal-card-foot">
+                <a href="{{.Special.TargetSubmit}}"><button class="button" value="close" >{{.Special.Buttontext}}</button></a>
+                <!-- <button class="button" value="close" onclick="window.location.href='https://www.itswizard.de{{.Special.TargetSubmit}}'">{{.Special.Buttontext}}</button> -->
+            </footer>
+        </div>
+    </div>
+</section>
+
+</body>

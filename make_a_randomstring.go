@@ -17,6 +17,6 @@ func MakeARandomString() string {
 	return output
 }
 
-func Test() {
+func Test2() {
 	fmt.Println("Test")
 }
